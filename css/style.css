@@ -1,0 +1,263 @@
+/* -------------------- GENERAL -------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mensaje {
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #4CAF50;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* -------------------- BODY -------------------- */
+
+body {
+    background: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px 10px;
+}
+
+/* -------------------- CONTENEDOR -------------------- */
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.titulo:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* -------------------- REGISTRO -------------------- */
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 12px rgba(69, 160, 73, 0.5);
+}
+
+form>button[name="mostrar_formulario"] {
+    display: block;
+    margin: -10px auto;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 18px;
+    margin: 10px 0 20px;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+input[type=text]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.contenedor-boton-registro {
+    text-align: center;
+}
+
+/* -------------------- BUSQUEDA -------------------- */
+
+.busqueda {
+    margin-bottom: 30px;
+}
+
+.contenedor-busqueda {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    margin-bottom: -20px;
+}
+
+.contenedor-busqueda input[type=text] {
+    flex-grow: 1;
+}
+
+.contenedor-busqueda button {
+    padding: 12px 25px;
+    height: auto;
+}
+
+/* -------------------- TABLA -------------------- */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+th {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+td.acciones {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td.acciones form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0 4px;
+}
+
+form[style*='inline-block'] button {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-right: 6px;
+}
+
+.boton-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 6px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.boton-eliminar:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 14px rgba(231, 76, 60, 0.6);
+}
+
+/* -------------------- EDITAR -------------------- */
+
+.contenedor-boton-editar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.boton-cancelar {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+    text-align: center;
+    line-height: normal;
+}
+
+.boton-cancelar:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 14px rgba(231, 76, 60, 0.6);
+}
+
+/* -------------------- PAGINACION -------------------- */
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.paginacion a {
+    text-decoration: none;
+    color: #4CAF50;
+    padding: 8px 14px;
+    margin: 0 2px;
+    border: 1.5px solid #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.paginacion a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.paginacion a.active {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 700;
+}
+
+.puntos {
+    font-weight: bold;
+    color: #4CAF50;
+    user-select: none;
+}
