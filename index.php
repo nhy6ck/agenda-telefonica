@@ -125,7 +125,7 @@ CloseCon($conn);
                 <form method="GET" action="">
                     <div class="contenedor-busqueda">
                         <input type="text" name="search-name" placeholder="Buscar contacto por nombre o teléfono" value="<?php echo htmlspecialchars($searchName); ?>" required>
-                        <button type="submit">Buscar</button>
+                        <button type="submit" class="boton-buscar">Buscar</button>
                     </div>
                 </form>
 
@@ -148,7 +148,7 @@ CloseCon($conn);
                                             <td class="acciones">
                                                 <form method="POST" action="" style="display:inline-block;">
                                                     <input type="hidden" name="edit-id" value="<?php echo $contacto->getId(); ?>">
-                                                    <button type="submit" title="Editar Contacto">Editar</button>
+                                                    <button type="submit" class="boton-editar" title="Editar Contacto">Editar</button>
                                                 </form>
                                                 <form method="POST" action="" style="display:inline-block; margin-left:5px;">
                                                     <input type="hidden" name="delete-id" value="<?php echo $contacto->getId(); ?>">
@@ -230,7 +230,7 @@ CloseCon($conn);
                                             <td class="acciones">
                                                 <form method="POST" action="" style="display:inline-block;">
                                                     <input type="hidden" name="edit-id" value="<?php echo $contacto->getId(); ?>">
-                                                    <button type="submit" title="Editar Contacto">Editar</button>
+                                                    <button type="submit" class="boton-editar" title="Editar Contacto">Editar</button>
                                                 </form>
                                                 <form method="POST" action="" style="display:inline-block; margin-left:5px;">
                                                     <input type="hidden" name="delete-id" value="<?php echo $contacto->getId(); ?>">
