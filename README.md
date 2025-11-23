@@ -7,4 +7,4 @@ Crear un proyecto llamado AgendaTelefónica que permita simular una agenda de co
   -	buscarContacto(), recibe el nombre del contacto que desea buscar y muestra el teléfono.
 -	En el index principal, realizar todos los procesos anteriormente diseñados por los métodos y mostrar los resultados.
 
-  [![agenda telefonica.png](https://i.postimg.cc/05FLY7sR/agenda-telefonica.png)](https://postimg.cc/9zP8VR0J)
+[![agenda-telefonica](https://i.postimg.cc/mrPzLdHj/agenda-telefonica.png)](https://postimg.cc/LqM6v3vg)
